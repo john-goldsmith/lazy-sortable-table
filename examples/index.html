@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Lazy Sortable Table &mdash; A jQuery plugin to sort tables</title>
+    <link rel="stylesheet" href="stylesheets/lazy_sortable_table.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  </head>
+
+  <body>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Lazy Sortable Table</h1>
+        <p>A jQuery plugin to sort tables</p>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-9">
+
+          <div class="row" id="checkboxes">
+            <div class="col-xs-12">
+              <h2>Example</h2>
+              <ul class="nav nav-tabs">
+                <li role="presentation" class="active">
+                  <a href="#example-output" aria-controls="example-output" role="tab" data-toggle="tab">Output</a>
+                </li>
+                <li role="presentation">
+                  <a href="#example-code" aria-controls="example-code" role="tab" data-toggle="tab">Code</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="example-output">
+                </div>
+                <div role="tabpanel" class="tab-pane" id="example-code">
+                  <h4>HTML</h4>
+                  <pre></pre>
+                  <h4>JavaScript</h4>
+                  <pre>$("#table").lazySortableTable();</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-3" role="navigation">
+          <div data-spy="affix" data-offset-top="240" data-offset-bottom="0">
+            <ul class="nav nav-pills nav-stacked">
+              <li>
+                <a href="#checkboxes">Nav Item 1</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Include dependencies -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- Include Lazy Sortable Table -->
+    <script src="javascripts/jquery.lazySortableTable-1.0.0.min.js"></script>
+
+    <!-- Initialize Lazy Sortable Table -->
+    <script>
+    </script>
+
+    <!-- Scripts below this line are for presentation usage only and not required for Lazy Sortable Table -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap workaround. See http://stackoverflow.com/questions/11568430/issue-with-twitter-bootstrap-pills -->
+    <script>
+      $(document).ready(function(){
+        $(".nav-stacked li").click(function(){
+          $(".nav-stacked li").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+
+  </body>
+
+</html>

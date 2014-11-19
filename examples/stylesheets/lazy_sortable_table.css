@@ -1,0 +1,68 @@
+html, body {
+  /*font-family: Arial, sans-serif;*/
+  /*background-color: #e5e5e5;*/
+}
+
+a {
+  color: #000;
+  text-shadow: 1px 1px #d9d9d9;
+}
+
+div {
+  padding: 0;
+  margin: 0;
+}
+
+div.lazy-checkbox-wrapper, div.lazy-radio-wrapper, div.lazy-select-wrapper, div.lazy-button-wrapper {
+  float: left;
+  display: block;
+  clear: both;
+  margin: 0 0 5px 0;
+}
+
+span.lazy-button-span-mid, span.lazy-select-span-mid {
+  padding: 0 10px;
+}
+
+div.lazy-checkbox-wrapper label, div.lazy-radio-wrapper label, {
+  margin: 0 0 0 5px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+div.lazy-select-options-wrapper {
+  /*
+  max-height: 100px;
+  overflow: auto;
+  */
+  border: 1px solid #9c9c9c;
+  z-index' : 100;
+  background-color : #fff;
+  border-radius : 4px;
+  margin: 2px 0 0 0;
+}
+
+div.lazy-select-options-wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+div.lazy-select-options-wrapper ul li {
+  padding: 5px 10px;
+  margin: 0;
+}
+
+div.lazy-select-options-wrapper ul li:hover {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+/* Bootstrap */
+.affix {
+  top: 30px;
+}
